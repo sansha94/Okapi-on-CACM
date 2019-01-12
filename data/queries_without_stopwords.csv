@@ -1,0 +1,65 @@
+Query_No,Query
+1,What articles exist deal TSS (Time Sharing System), operating system IBM computers?
+2,I interested articles written Prieve Udo Pooch .A Prieve, B. Pooch, U.
+3,Intermediate languages construction multi-targeted compilers; TCOLL
+4,I'm interested mechanisms communicating disjoint processes, possibly, exclusively, distributed environment. I descriptions complete mechanisms, implementations, opposed theoretical work abstract problem. Remote procedure calls message-passing examples interests.
+5,I'd papers design implementation editing interfaces, window-managers, command interpreters, etc. The essential issues human interface design, views improvements user efficiency, effectiveness satisfaction.
+6,Interested articles robotics, motion planning geometric combinatorial aspects. We interested dynamics arm motion.
+7,I interested distributed algorithms - concurrent programs processes communicate synchronize message passing. Areas interest include fault-tolerance techniques understanding correctness algorithms.
+8,Addressing schemes resources networks; resource addressing network operating systems
+9,Security considerations local networks, network operating systems, distributed systems.
+10,Parallel languages; languages parallel computation
+11,SETL, Very High Level Languages
+12,portable operating systems
+13,code optimization space efficiency
+14,find discussions optimal implementations sort algorithms database management applications
+15,Find discussions horizontal microcode optimization special emphasis optimization loops global optimization.
+16,find descriptions handling operating systems based multiple processes message passing.
+17,Optimization intermediate machine code
+18,Languages compilers parallel processors, especially highly horizontal microcoded machines; code compaction
+19,Parallel algorithms
+20,Graph theoretic algorithms applicable sparse matrices
+21,computational complexity, intractability, class-complete reductions, algorithms efficiency
+22,I interested hidden-line hidden-surface algorithms cylinders, toroids, spheres, cones. This specialized topic computer graphics.
+23,Distributed computing structures algorithms
+24,Applied stochastic processes
+25,Performance evaluation modelling computer systems
+26,Concurrency control mechanisms operating systems
+27,Memory management aspects operating systems
+28,Any information packet radio networks. Of interest algorithms packet routing, dealing network topography. I interested hardware network.
+29,Number-theoretic algorithms, especially involving prime number series, sieves, Chinese Remainder theorem.
+30,Articles text formatting systems, including what get systems. Examples: t/nroff, scribe, bravo.
+31,I'd find articles describing singular decomposition digital image processing. Applications include finding approximations original image restoring images subject noise. An article subject H.C. Andrews C.L. Patterson Outer product expansions digital image processing, American Mathematical Monthly, vol. 82. .A Andrews, H.C. Patterson, C.L.
+32,I'd find articles describing graph algorithms based eigenvalue decomposition (or singular decomposition) ajacency matrix graph. I'm especially interested heuristic algorithms graph coloring graph isomorphism method.
+33,Articles sensitivity eigenvalue decomposition real matrices, particular, zero-one matrices. I'm especially interested separation eigenspaces distinct eigenvalues. Articles subject: C. Davis W.M. Kahn, The rotation eigenvectors permutation:, SIAM J. Numerical Analysis, vol. 7, no. 1 (1970); G. Stewart, Error bounds approximate invariant subspaces closed linear operators, SIAM J. Numerical Analysis., Vol. 8, no. 4 (1971). .A Davis, C. Kahn, W.M. Stewart, G.
+34,Currently interested isolation root polynomial; article Heindel, L.E. J. ACM, Vol. 18, 533-548. I find recent material. .A Heindel, L.E.
+35,Probabilistic algorithms especially dealing algebraic symbolic manipulation. Some examples: Rabiin, Probabilistic algorithm finite field, SIAM Waztch, Probabilistic testing polynomial identities, SIAM .A Rabin,M.
+36,Fast algorithm context-free language recognition parsing
+37,Articles describing relationship data types concurrency (e.g. type process? synchronization attempt processes type correct? message-passing system notion types messages?--i.e. check sender message receiver treating bit stream type)
+38,What type module? (I don't want entire literature Abstract Data Types here, I'm sure phrase avoid it. I'm interested questions check module matches contexts used.)
+39,What type compatibility mean languages allow programmer defined types? (You want restrict extensible languages allow definition abstract data types programmer-supplied definitions operators *, +.)
+40,List articles dealing data types languages: Pascal, CLU, Alphard, Russell, Ada, ALGOL 68, EL1. List languages referenced frequently papers languages (e.g. catch languages interesting type structures I missed).
+41,Theory distributed systems databases. Subtopics special interest include reliability fault-tolerance distributed systems, atomicity, distributed transactions, synchronization algorithms, resource allocation; lower bounds models asynchronous parallel systems. Also theory communicating processes protocols. 41. Michael J. Fischer, Computer Sci., Yale Univ., 10 Hillhouse Ave.,
+42,Computer performance evaluation techniques pattern recognition clustering. 42. George R. Cross, Lousiana State Univ., Comp Sci Dept, Baton Rouge.,
+43,Analysis perception shape humans computers. Shape descriptions, shape recognition computer. Two-dimensional shapes. Measures circularity. Shape matching.
+44,Texture analysis computer. Digitized texture analysis. Texture synthesis. Perception texture.
+45,The operations research models optimize information system performance. This includes fine tuning decisions secondary index selection, reorganization, distributed databases.
+46,The application fuzzy subset theory clustering information retrieval problems. This includes performance evaluation automatic indexing considerations.
+47,The Bayesian decision models optimize information retrieval system performance. This includes stopping rules determine user cease scanning output retrieval search.
+48,The computer science principles (e.g. data structures, numerical methods) generating optimization (e.g. linear programming) algorithms. This includes issues Khachian (Russian, ellipsoidal) algorithm complexity algorithms.
+49,The role information retrieval knowledge based systems (i.e., expert systems).
+50,Parallel processors information retrieval
+51,Parallel processors paging algorithms
+52,Modelling simulation agricultural ecosystems.
+53,mathematical induction, group theory, integers modulo m, probability, binomial coefficients, binomial theorem, homomorphism, morphism, transitivity, relations, relation matrix. 53. H. F. Mattson, Jr., School Computer Information Science,
+54,Semantics programming languages, including abstract specifications data types, denotational semantics, proofs correctness. .A Hoare, A. Dijkstra, E. 54. Michael A. Arbib, Dept. Of Computer And Information Science,
+55,Anything dealing star height regular languages regular expressions regular events.
+56,Articles relation algebraic theory semigroups monoids study automata regular languages.
+57,Abstracts articles: J. Backus, Can programming liberated Von Neumann style? A functional style algebra programs, CACM 21 (1978), 613-641. R.A.De Millo, R.J. Lipton, A.J. Perlis, letter ACM Forum, CACM 22 (1979), 629-630 .A Backus, J. De Millo, R.A. Lipton, R.J. Perlis, A.J.
+58,Algorithms statistical packages ANOVA, regression squares generalized linear models. System design, capabilities, statistical formula interest. Student's test, Wilcoxon sign tests, multivariate univariate components included.
+59,Dictionary construction accessing methods fast retrieval words lexical items morphologically related information. Hashing indexing methods applied English spelling natural language problems.
+60,Hardware software relating database management systems. Database packages, back end computers, special associative hardware microcomputers attached disk heads things RAP, relational network (CODASYL) hierarchical models, systems SYSTEM R, IMS, ADABAS, TOTAL, etc.
+61,Information retrieval articles Gerard Salton clustering, bibliographic coupling, citations co-citations, vector space model, Boolean search methods inverted files, feedback, etc. .A Salton, G.
+62,Results relating parallel complexity theory (both PRAM's uniform circuits).
+63,Algorithms parallel computation, especially comparisons parallel sequential algorithms.
+64,List articles EL1 ECL (EL1 EL/1; I don't remember it.
