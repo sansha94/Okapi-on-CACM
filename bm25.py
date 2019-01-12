@@ -35,10 +35,14 @@ doc_length = {}
 # Average document length
 avg_doc_length = 0
 
+# Okapi scores
+scores = {}
+
 # Okapi Constants
 k1 = 0.2
 b = 0.75
 k3 = 7.0
+qtf = 1
 
 # Calculating document length
 for doc_no, child in enumerate(root, start=1):
@@ -91,6 +95,8 @@ for query in queries['Query']:
             if query_idf[q] > 0:
                 query_idf[q] = round(np.log2((N - query_idf[q] + 0.5)/ (query_idf[q] + 0.5)), 3)
 
+q_no = 0
+
 # Pseudo relevance feedback based selection Okapi-BM25
 for query in queries['Query']:
     query = regexp_tokenize(query, pattern)
@@ -99,3 +105,25 @@ for query in queries['Query']:
     query = [w for w in query if w not in stop_words]
     query = set(query)
 
+    q_no += 1
+
+    doc_score = {}
+
+    for tf in query_tf:
+        score = 0
+        for i in range(N):
+
+            if len(query_tf[tf][i]) > 0:
+                for term in query_tf[tf][i]:
+                    K = k1 * ((1 - b) + (b * (doc_length['Doc '+str(i+1)] / avg_doc_length)))
+                    temp = query_idf[term] * ((k1+1) * query_tf[tf][i][term]) * (k3 + 1)
+                    score += round(temp / ((K + query_tf[tf][i][term]) *(k3+1)), 3)
+
+                doc_score['Doc ' + str(i+1)] = score
+            else:
+                doc_score['Doc ' + str(i+1)] = 0.0
+
+    scores['Query 1'] = doc_score
+
+print(query_tf['Query 1'])
+print(scores['Query 1'])
