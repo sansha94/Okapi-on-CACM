@@ -123,7 +123,8 @@ for query in queries['Query']:
             else:
                 doc_score['Doc ' + str(i+1)] = 0.0
 
-    scores['Query 1'] = doc_score
+    scores['Query ' + str(q_no)] = doc_score
 
-print(query_tf['Query 1'])
 print(scores['Query 1'])
+print(scores['Query 2'])
+print(scores.keys())
