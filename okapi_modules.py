@@ -1,4 +1,5 @@
 from nltk.tokenize import regexp_tokenize
+import json
 
 
 def document_length(root, pattern, stop_words):
@@ -17,6 +18,7 @@ def document_length(root, pattern, stop_words):
 def average_document_length(doc_length, N):
     return round(sum(doc_length.values()) / N, 3)
 
+
 def to_dict(sorted_list):
     d = {}
 
@@ -24,3 +26,9 @@ def to_dict(sorted_list):
         d[l[0]] = l[1]
 
     return d
+
+
+def write_json(scores_dict, file_name):
+
+    with open('data/'+file_name+'.json', 'w') as fp:
+        json.dump(scores_dict, fp)

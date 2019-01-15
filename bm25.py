@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import json
 import xml.etree.ElementTree as ET
 import term_frequency as tf
 import okapi_modules as okapi
@@ -49,12 +50,6 @@ query_top5_docs = {}
 query_top10_docs = {}
 query_top15_docs = {}
 query_top25_docs = {}
-
-# top list of documents
-top5= []
-top10 = []
-top15 = []
-top25 = []
 
 # Getting document length
 doc_length = okapi.document_length(root, pattern, stop_words)
@@ -113,9 +108,9 @@ for q_no in range(1, 65):
                 K = k1 * ((1 - b) + (b * (doc_length['Doc ' + str(i + 1)] / avg_doc_length)))
                 temp = query_idf[term] * ((k1 + 1) * query_tf[query][i][term]) * (k3 + 1)
                 score += round(temp / ((K + query_tf[query][i][term]) * (k3 + 1)), 3)
-        doc_score['Doc ' + str(i + 1)] = score
+        doc_score["Doc " + str(i + 1)] = score
 
-    scores['Query ' + str(q_no)] = doc_score
+    scores["Query " + str(q_no)] = doc_score
 
 for score in scores:
     query_top5_docs[score] = okapi.to_dict(sorted(scores[score].items(), key=lambda x:x[1], reverse=True)[:5])
@@ -123,3 +118,7 @@ for score in scores:
     query_top15_docs[score] = okapi.to_dict(sorted(scores[score].items(), key=lambda x: x[1], reverse=True)[:15])
     query_top25_docs[score] = okapi.to_dict(sorted(scores[score].items(), key=lambda x: x[1], reverse=True)[:25])
 
+t = ['query_top5_docs', 'query_top10_docs', 'query_top15_docs', 'query_top25_docs']
+
+for i in t:
+    okapi.write_json(eval(i), i[:-5])
