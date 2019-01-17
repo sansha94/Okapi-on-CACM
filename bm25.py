@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import json
 import xml.etree.ElementTree as ET
 import term_frequency as tf
 import okapi_modules as okapi

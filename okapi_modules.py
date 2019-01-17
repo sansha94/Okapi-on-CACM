@@ -2,7 +2,7 @@ from nltk.tokenize import regexp_tokenize
 import json
 
 
-def document_length(root, pattern, stop_words):
+def document_length(root, pattern, stop_words: set):
     doc_length = {}
     for doc_no, child in enumerate(root, start=1):
         doc = regexp_tokenize(child[0].text, pattern)
@@ -28,7 +28,7 @@ def to_dict(sorted_list):
     return d
 
 
-def write_json(scores_dict, file_name):
+def write_json(scores_dict, file_name: str):
 
     with open('data/'+file_name+'.json', 'w') as fp:
-        json.dump(scores_dict, fp)
+        json.dump(scores_dict, fp, indent=4)
